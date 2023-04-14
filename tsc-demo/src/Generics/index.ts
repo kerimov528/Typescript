@@ -17,7 +17,6 @@ class ArrayUtils {
 let s = ArrayUtils.wrapInArray(2)
 
 // interface generics
-
 interface Result<T> {
     data: T | null,
     error: string | null
@@ -38,9 +37,7 @@ function fetch<T>(url: string): Result<T> {
 let result = fetch<Product>('url')
 result.data?.title
 
-
 //
-
 interface PersonObj {
     name: string | null
 }
@@ -51,9 +48,7 @@ function echo<T extends PersonObj>(value: T): T {
 
 echo({ name: 'a', })
 
-
 // type Mapping 
-
 interface Proddd {
     name: string
     price: number
@@ -63,12 +58,10 @@ type ReadOnlyProduct = {
     [P in keyof Proddd]: Proddd[P]
 }
 
-
 // Utility Types 
 
 // Partial => hamsini optional edir
 // Required => hamsini vacib edir 
-
 
 // Exercies 
 

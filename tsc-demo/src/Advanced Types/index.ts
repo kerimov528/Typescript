@@ -117,3 +117,5 @@ type weeks = 'Monday' | 'Tuesday' | 'Wednesday' | 'Thursday' | 'Friday' | 'Satur
 let value: unknown = 'a'
 if (typeof value === 'string')
     console.log(value.toUpperCase)
+
+let ads: number = 4
